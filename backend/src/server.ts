@@ -1,7 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express, { Application } from "express";
 import cors from "cors";
 import http from "http";
-import dotenv from "dotenv";
 import connectDb from "./config/connect-db";
 import userRouter from "./routes/user-router";
 import tableRouter from "./routes/table-router";
@@ -11,7 +12,6 @@ import verifyToken from "./middleware/verify-token";
 import sheetRouter from "./routes/sheet-router";
 import { setupWebSocketServer } from "./config/ws-handler";
 
-dotenv.config();
 
 const app: Application = express();
 const server = http.createServer(app);
