@@ -5,9 +5,7 @@ const PageLoader = () => {
   return (
     <div className="h-svh w-full center bg-vio">
       <CircularProgress
-        color="#7f22fe"
-        size={150}
-        aria-label="Loading Spinner"
+
       />
     </div>
   );
